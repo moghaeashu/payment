@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay 10 Rs</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button id="payButton">Pay 10 Rs</button>
+
+  <script>
+    const upiId = "nishantmogha@fam"; // Replace with your UPI ID
+    const amount = 10;
+
+    document.getElementById("payButton").addEventListener("click", () => {
+      const upiUrl = `upi://pay?pa=${upiId}&pn=Harshit&am=${amount}&cu=INR`;
+      window.location.href = upiUrl;
+    });
+  </script>
+</body>
+</html>
