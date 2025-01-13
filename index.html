@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submit Form Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Instagram Likes Boosting</h2>
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="postLink">Post/Reel Link</label>
+                <input type="url" id="postLink" name="postLink" required>
+            </div>
+            <div class="form-group">
+                <label for="likes">Number of Likes</label>
+                <input type="number" id="likes" name="likes" required>
+            </div>
+            <div class="form-group">
+                <label for="paymentScreenshot">Screenshot of Payment</label>
+                <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+            </div>
+        </form>
+        <div id="payment">
+            <img src="./img/upi.jpg">
+            <h1>Send Payment on that QR Code and upload the screenshot of that Payment.</h1>
+            <button type="button" onclick="submitData()">Submit</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

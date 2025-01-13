@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 2000px;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background-size: 400% 400%;
+  animation: bg-animation 6s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 850px;
+  height: 1550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #262626;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Instagram Sans', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 20px;
+}
+
+.form-group input {
+  width: 800px;
+  padding: 20px 3px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fafafa;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.form-group input[type="file"] {
+  padding: 12px 10px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+button {
+  background: linear-gradient(90deg, #fdc468, #ff7eb3, #a56ff8);
+  background-size: 300% 300%;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: btn-animation 3s infinite linear;
+  outline: none;
+  display: inline-block;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes btn-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+#payment{
+  width: 850px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#payment img{
+  width: 800px;
+  height: 800px;
+}
+#payment h1{
+  text-align: center;
+}
+
+
+
+
+
+  /* For medium screens (tablets, smaller desktops) */
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  }
+  
